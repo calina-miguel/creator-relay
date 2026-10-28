@@ -1,4 +1,6 @@
 import "./creator-relay.css";
+import "./pathway.css";
+import { Pathway } from "./pathway";
 
 export const metadata = {
   title: "Creator Relay | From audience to offer",
@@ -93,13 +95,7 @@ export default function Page() {
           <h2>Start with<br />what they <em>love.</em></h2>
           <p>Get a focused content-to-commerce route shaped around your audience and your next idea.</p>
         </div>
-        <form className="invite-form reveal">
-          <div className="form-label"><span>CREATOR RELAY / INQUIRY</span><span>01 — 03</span></div>
-          <label htmlFor="creator-email">Where should we send your route?</label>
-          <input id="creator-email" name="email" type="email" placeholder="you@example.com" required />
-          <button type="submit">Find my bridge <span aria-hidden="true">↗</span></button>
-          <small>No noise. Just a useful next step.</small>
-        </form>
+        <Pathway />
       </section>
 
       <footer className="relay-footer"><a className="relay-brand" href="#top"><span className="relay-mark" aria-hidden="true">C<span>R</span></span><span>creator<span className="brand-light">relay</span></span></a><span>Content, with a clear next move.</span><span>© 2026 CREATOR RELAY</span></footer>
