@@ -8,7 +8,7 @@
 }
 
 html { scroll-behavior: smooth; }
-.relay-page { overflow: clip; background: var(--relay-paper); color: var(--relay-ink); font-family: Arial, Helvetica, sans-serif; }
+.relay-page { overflow: clip; background: var(--relay-paper); color: var(--relay-ink); font-family: Georgia, 'Times New Roman', serif; }
 .relay-nav, .relay-hero, .relay-route, .relay-invite, .relay-footer { width: min(1240px, calc(100% - 64px)); margin-inline: auto; }
 .relay-nav { min-height: 86px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgb(40 33 44 / 14%); }
 .relay-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--relay-ink); font-size: 17px; font-weight: 800; letter-spacing: -.06em; text-decoration: none; }
@@ -141,3 +141,7 @@ html { scroll-behavior: smooth; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+/* Creator Relay uses an editorial serif voice, with crisp sans-serif wayfinding. */
+.relay-page :is(.relay-brand,.relay-nav-link,.relay-kicker,.route-number,.relay-footer){font-family:Arial,Helvetica,sans-serif;letter-spacing:.09em}
+.relay-page :is(h1,h2,h3){font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.045em}
