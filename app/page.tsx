@@ -68,10 +68,6 @@ export default function Page() {
         <div className="hero-index"><span>01</span><span className="index-rule" /><span>03</span></div>
       </section>
 
-      <div className="relay-marquee" aria-hidden="true">
-        <div className="marquee-track"><span>LISTEN CLOSELY</span><i>✳</i><span>MAKE IT USEFUL</span><i>✳</i><span>LET THE STORY SELL</span><i>✳</i><span>LISTEN CLOSELY</span><i>✳</i><span>MAKE IT USEFUL</span><i>✳</i><span>LET THE STORY SELL</span><i>✳</i></div>
-      </div>
-
       <section className="relay-route" id="route">
         <div className="route-intro reveal">
           <p className="eyebrow"><span className="eyebrow-line" /> A BETTER WAY TO BUILD</p>
@@ -87,6 +83,12 @@ export default function Page() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="relay-editor-note" aria-label="Editorial note">
+        <span className="editor-note-index">FIELD NOTE / 01</span>
+        <p>Good commerce begins with a story people already want to be part of.</p>
+        <span className="editor-note-sign">CREATOR RELAY <b>✳</b></span>
       </section>
 
       <section className="relay-invite" id="start">

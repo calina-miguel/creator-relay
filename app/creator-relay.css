@@ -145,3 +145,15 @@ html { scroll-behavior: smooth; }
 /* Creator Relay uses an editorial serif voice, with crisp sans-serif wayfinding. */
 .relay-page :is(.relay-brand,.relay-nav-link,.relay-kicker,.route-number,.relay-footer){font-family:Arial,Helvetica,sans-serif;letter-spacing:.09em}
 .relay-page :is(h1,h2,h3){font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.045em}
+
+/* Editorial pacing: ruled story index, asymmetric note, quiet page rhythm. */
+.relay-route{grid-template-columns:.55fr 1.45fr;gap:7vw;padding-block:105px 112px}
+.route-intro{position:sticky;top:16vh;align-self:start}
+.route-list{border-top:1px solid #d8d0c3}
+.route-item{min-height:150px;border-bottom:1px solid #d8d0c3;grid-template-columns:48px 1fr 1.1fr 24px;gap:22px}
+.route-title h3{font-size:clamp(1.5rem,2.5vw,2.25rem)}
+.relay-editor-note{width:min(100% - 72px,1080px);margin:0 auto 100px;padding:32px 0;border-top:1px solid #d8d0c3;border-bottom:1px solid #d8d0c3;display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;gap:24px}
+.editor-note-index,.editor-note-sign{font:700 9px Arial,sans-serif;letter-spacing:.15em;color:#8b8176}
+.editor-note-sign{text-align:right}.editor-note-sign b{color:#b3573f;font-size:17px;margin-left:9px}
+.relay-editor-note p{margin:0;font:italic clamp(1.5rem,3vw,2.6rem)/1.15 Georgia,serif;color:#352b27}
+@media(max-width:800px){.relay-route{grid-template-columns:1fr;gap:30px}.route-intro{position:static}.route-item{grid-template-columns:32px 1fr 22px;gap:12px}.relay-editor-note{width:calc(100% - 36px);grid-template-columns:1fr 1fr;margin-bottom:65px}.relay-editor-note p{grid-column:1/-1;grid-row:2}.editor-note-sign{grid-column:2;grid-row:1}}
